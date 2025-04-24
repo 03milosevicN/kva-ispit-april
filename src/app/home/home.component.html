@@ -1,0 +1,12 @@
+<div *ngIf="movies" class="movies-card">
+
+  <mat-card *ngFor="let movie of movies" class="movie-card">
+    <a routerLink="/movie/{{movie.movieId}}">
+      <img mat-card-image ngSrc="{{movie.poster}}" alt="{{movie.title}}.jpg" [height]="280" [width]="300">
+    </a>
+    <mat-card-content class="movie-card-content">
+      <p id="movie-title">{{movie.title}}</p>
+      <p>Datum prikazivanja: {{movie.startDate}}</p>
+    </mat-card-content>
+  </mat-card>
+</div>
