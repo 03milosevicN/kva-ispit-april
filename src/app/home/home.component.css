@@ -1,0 +1,22 @@
+.movies-card {
+  margin-top: 30px;
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.movie-card {
+  width:300px;
+  height: 400px;
+  background: #49796b;
+}
+.movie-card-content {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 18px;
+  color: white;
+}
+
+#movie-title {
+  font-weight: bold;
+  font-size: 19px;
+}

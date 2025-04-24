@@ -40,6 +40,7 @@ export class MovieService {
     });
   }
 
+
   /**
    * Gets movie based on its ID.
    * @param movieId id of movie to be fetched.
