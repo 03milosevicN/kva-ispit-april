@@ -1,0 +1,29 @@
+.wrapper {
+  display: flex;
+}
+
+.movie-card-poster {
+  height: 400px;
+  width: 200px;
+}
+
+.movie-card-desc {
+  height: 400px;
+  background: #49796b;
+}
+
+.movie-card-poster, .movie-card-desc {
+  flex: 1;
+  padding: 10px;
+}
+
+.top {
+  display: flex;
+  gap: 20px; /* spacing between poster and desc */
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.order {
+  text-align: start;
+}
