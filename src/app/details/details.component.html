@@ -1,0 +1,24 @@
+<div *ngIf="movie" class="wrapper">
+
+
+
+    <mat-card class="movie-card-poster">
+      <img mat-card-image ngSrc="{{movie.poster}}" alt="{{movie.title}}.jpg" fill>
+    </mat-card>
+    <mat-card ></mat-card>
+
+    <div class="movie-card-desc">
+      <h1>{{movie.title}}</h1>
+
+      <p>
+        {{movie.description}}
+      </p>
+    </div>
+
+</div>
+
+<div class="order">
+  <a mat-button [routerLink]="['/details/' + movie?.movieId + '/order']">
+    <i class="fa-solid fa-credit-card"></i> Get tickets
+  </a>
+</div>

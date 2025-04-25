@@ -1,7 +1,7 @@
 <div *ngIf="movies" class="movies-card">
 
   <mat-card *ngFor="let movie of movies" class="movie-card">
-    <a routerLink="/movie/{{movie.movieId}}">
+    <a routerLink="/details/{{movie.movieId}}">
       <img mat-card-image ngSrc="{{movie.poster}}" alt="{{movie.title}}.jpg" [height]="280" [width]="300">
     </a>
     <mat-card-content class="movie-card-content">
