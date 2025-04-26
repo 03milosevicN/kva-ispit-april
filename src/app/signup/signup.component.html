@@ -1,0 +1,41 @@
+<mat-card class="signup-card">
+
+  <mat-card-header>
+    <h1>Signup</h1>
+  </mat-card-header>
+
+  <mat-card-content>
+    <mat-form-field>
+      <mat-label>Email</mat-label>
+      <input type="email" matInput placeholder="Input your email" [(ngModel)]="email">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>First name</mat-label>
+      <input type="text" matInput placeholder="Input your first name" [(ngModel)]="firstName">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Last name</mat-label>
+      <input type="text" matInput placeholder="Input your last name" [(ngModel)]="lastName">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Password</mat-label>
+      <input type="password" matInput placeholder="Input your password" [(ngModel)]="password">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Repeat password</mat-label>
+      <input type="password" matInput placeholder="Repeat your password" [(ngModel)]="repeatPassword">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Phone number</mat-label>
+      <input type="text" matInput placeholder="Input your phone number" [ngModel]="phone">
+    </mat-form-field>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button (click)="doSignup()">
+      <i class="fa-solid fa-right-to-bracket"></i> Signup now
+    </button>
+    <a mat-button routerLink="/login">
+      <i class="fa-solid fa-arrow-up-right-from-square"></i> I already have an account
+    </a>
+  </mat-card-actions>
+</mat-card>
