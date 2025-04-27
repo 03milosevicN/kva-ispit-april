@@ -1,0 +1,70 @@
+* {
+  font-family: "Playfair Display", sans-serif;
+}
+
+#signup-header {
+  color: #fff;
+}
+
+.signup-card {
+  max-width: 450px;
+  margin: 80px auto;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #49796b;
+}
+
+.signup-card mat-card-header h1 {
+  font-size: 2rem;
+  margin: 0;
+  text-align: center;
+  color: #333;
+}
+
+.signup-card mat-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.signup-card mat-form-field {
+  width: 100%;
+}
+
+.signup-card mat-card-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.signup-card mat-card-actions button {
+  background-color: #1976d2;
+  color: white;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 0.75rem;
+  transition: background-color 0.3s;
+}
+
+.signup-card mat-card-actions button:hover {
+  background-color: #1565c0;
+}
+
+.signup-card mat-card-actions a {
+  text-align: center;
+  color: #1976d2;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.signup-card mat-card-actions a:hover {
+  color: #0d47a1;
+}
+
+.signup-card i {
+  margin-right: 8px;
+}
