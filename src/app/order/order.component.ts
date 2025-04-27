@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {MovieModel} from '../../models/movie.model';
-import {NgIf} from '@angular/common';
+import {NgIf, NgOptimizedImage} from '@angular/common';
 import {MatCard, MatCardContent, MatCardImage} from '@angular/material/card';
 import {UtilsService} from '../../services/utils.service';
 import {ActivatedRoute, Router} from '@angular/router';
@@ -24,7 +24,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     MatButton,
     FormsModule,
     MatSelect,
-    MatOption
+    MatOption,
+    NgOptimizedImage
   ],
   templateUrl: './order.component.html',
   styleUrl: './order.component.css',
@@ -46,7 +47,7 @@ export class OrderComponent {
   }
 
   public doOrder() {
-    const confirmed = window.confirm('Place an order to ${this.movie.title}?\nOrders can be cancelled from your profile.');
+    const confirmed = window.confirm(`Place an order to ${this.movie?.title}?\nOrders can be cancelled from your profile.`);
 
     if (confirmed) {
       const result = UserService.createOrder({

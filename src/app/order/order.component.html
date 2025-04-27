@@ -1,7 +1,7 @@
 <div *ngIf="movie">
 
   <mat-card class="order">
-    <img mat-card-image [src]="utils.generatePoster(movie.title)" [alt]="movie.title">
+    <img id="order-image" mat-card-image ngSrc="{{movie.poster}}" alt="{{movie.title}}.jpg" [width]="300" [height]="300">
     <h3>Get tickets for {{movie.title}}</h3>
     <mat-card-content>
       <mat-form-field>

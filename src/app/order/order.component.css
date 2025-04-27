@@ -1,0 +1,49 @@
+.order {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 2rem;
+  border-radius: 12px;
+  background-color: #49796b;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  text-align: center;
+}
+
+#order-image {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin: 0 auto 20px auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.order h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.order mat-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.order mat-form-field {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.order button {
+  background-color: #1976d2;
+  color: white;
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.order button:hover {
+  background-color: #125ea3;
+}
